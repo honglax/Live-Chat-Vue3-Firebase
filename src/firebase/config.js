@@ -3,13 +3,13 @@ import 'firebase/firestore'
 import 'firebase/auth'
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyA-eW02N4KiKVQr5vlAQcJ1GDiJOafZhow',
-  authDomain: 'live-chat-vue-c940e.firebaseapp.com',
-  projectId: 'live-chat-vue-c940e',
-  storageBucket: 'live-chat-vue-c940e.appspot.com',
-  messagingSenderId: '302530047992',
-  appId: '1:302530047992:web:8ffc6e04899c04f159300d',
-  measurementId: 'G-3HRERVG5LK'
+  apiKey: 'AIzaSyCpDvMFDufJLnbUBxlo4yz9-YFWMLMmDaU',
+  authDomain: 'phile-chat-vue3.firebaseapp.com',
+  projectId: 'phile-chat-vue3',
+  storageBucket: 'phile-chat-vue3.appspot.com',
+  messagingSenderId: '91737800791',
+  appId: '1:91737800791:web:1cda293a5c3cdc96d96312',
+  measurementId: 'G-F8TJ9B656R'
 }
 
 firebase.initializeApp(firebaseConfig)

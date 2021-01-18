@@ -9,6 +9,7 @@
 
 <script>
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 import useLogin from '../composable/useLogin'
 
 export default {
@@ -16,12 +17,12 @@ export default {
     const email = ref('')
     const password = ref('')
 
+    const router = useRouter()
     const { error, login } = useLogin()
 
     const handleSubmit = async () => {
       await login(email.value, password.value)
       if (!error.value) {
-        console.log('emit login')
         context.emit('login')
       }
     }

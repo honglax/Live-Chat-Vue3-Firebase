@@ -10,10 +10,12 @@
 
 <script>
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 import useSignup from '../composable/useSignup'
 
 export default {
   setup(props, context) {
+    const router = useRouter()
     const { error, signup } = useSignup()
 
     const displayName = ref('')

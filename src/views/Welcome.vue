@@ -57,7 +57,7 @@ export default {
 }
 
 .welcome input {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   border-radius: 20px;
   border: 1px solid #eee;

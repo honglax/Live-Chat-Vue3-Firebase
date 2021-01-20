@@ -23,7 +23,7 @@ export default {
     const formattedDocuments = computed(() => {
       if (documents.value) {
         return documents.value.map(doc => {
-          let createdAt = formatDistanceToNow(doc.createdAt.toDate())
+          let createdAt = `${formatDistanceToNow(doc.createdAt.toDate())} ago`
           return { ...doc, createdAt }
         })
       }

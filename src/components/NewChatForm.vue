@@ -20,20 +20,21 @@ export default {
     const message = ref('')
     const { user } = getUser()
     const { addDoc, error } = useCollection('messages')
-
     const handleSubmit = async () => {
-      const chat = {
-        name: user.value.displayName,
-        message: message.value,
-        createdAt: timeStamp()
-      }
-      await addDoc(chat)
-      if (!error.value) {
-        message.value = ''
+      if (message.value.trim()) {
+        const chat = {
+          name: user.value.displayName,
+          message: message.value,
+          createdAt: timeStamp(),
+        }
+        await addDoc(chat)
+        if (!error.value) {
+          message.value = ''
+        }
       }
     }
     return { message, handleSubmit, error }
-  }
+  },
 }
 </script>
 <style scoped>
